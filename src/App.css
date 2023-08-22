@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+i {
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logout {
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+  width: 85px;
+  background-color: black;
   color: white;
+  font-size: 17px;
+  border: 0px;
+  border-radius: 6px;
+  padding: 2px 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.logSign {
+  width: 500px;
+  min-width: 280px;
+  border: 1px solid lightgray;
+  padding: 50px;
+  border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login {
+  width: 180px;
+  margin-left: 5px;
+}
+.signup {
+  width: 180px;
+  margin-left: 25px;
+}
+.logSign h1{
+    text-align: center;
+}
+.logSign label{
+    font-size: 20px;
+    margin-bottom: -10px!important;
+}
+@media (max-width:550px) {
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .logSign{
+        width: 100%;
+        padding: 10px;
+    }
+    .login{
+        width: 80%;
+        margin: auto;
+    }
+    .signup{
+        width: 80%;
+        margin: auto;
+    }
 }
