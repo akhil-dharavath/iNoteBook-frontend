@@ -1,5 +1,5 @@
-live at : https://inotebook-akhil-dharavath.netlify.app
-back-end code github repository : https://github.com/akhildgithub/iNoteBook-backend 
+-live at : https://inotebook-akhil-dharavath.netlify.app
+-back-end code github repository : https://github.com/akhildgithub/iNoteBook-backend 
 
 ## Used Technologies
 - React.js ( Front-end )
@@ -9,5 +9,5 @@ back-end code github repository : https://github.com/akhildgithub/iNoteBook-back
 - bcryptjs( for encrypting user deatils )
 
 ## deploy
-Netilfy for Front-end 
-Render.com for Backend 
+-Netilfy for Front-end 
+-Render.com for Backend 
