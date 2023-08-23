@@ -19,7 +19,7 @@ const Login = (props) => {
     e.preventDefault()
     const response = await fetch(
       // `http://localhost:1000/api/auth/login`
-      `https://inotebook-backend-hdoh.onrender.com/api/auth/login`
+      `https://inotebook-backend-pbw7.onrender.com/api/auth/login`
       , {
       method: 'POST',
       headers: {
