@@ -11,7 +11,10 @@ function Profile() {
   const [email, setEmail] = useState('')
   const [joined, setJoined] = useState('')
   const getUser = async () => {
-    const response = await fetch(`http://localhost:1000/api/auth/getuser`, {
+    const response = await fetch(
+      // `http://localhost:1000/api/auth/getuser`
+      `https://inotebook-backend-hdoh.onrender.com/api/auth/getuser`
+      , {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
