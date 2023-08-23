@@ -27,7 +27,7 @@ const Signup = (props) => {
     } else {
       const response = await fetch(
         // `http://localhost:1000/api/auth/createUser`
-        `https://inotebook-backend-hdoh.onrender.com/api/auth/createUser`
+        `https://inotebook-backend-pbw7.onrender.com/api/auth/createUser`
         ,
         {
           method: "POST",
