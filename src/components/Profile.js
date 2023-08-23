@@ -13,7 +13,7 @@ function Profile() {
   const getUser = async () => {
     const response = await fetch(
       // `http://localhost:1000/api/auth/getuser`
-      `https://inotebook-backend-hdoh.onrender.com/api/auth/getuser`
+      `https://inotebook-backend-pbw7.onrender.com/api/auth/getuser`
       , {
       method: 'POST',
       headers: {
