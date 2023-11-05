@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import '../App.css'
+import "../App.css";
 
 const Signup = (props) => {
   const [credentials, setCredentials] = useState({
@@ -11,11 +11,11 @@ const Signup = (props) => {
   });
   const navigate = useNavigate();
   useEffect(() => {
-    if (localStorage.getItem('token')) {
-      navigate('/')
+    if (localStorage.getItem("token")) {
+      navigate("/");
     }
     // eslint-disable-next-line
-  }, [])
+  }, []);
   const onChange = (e) => {
     e.preventDefault();
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -23,12 +23,10 @@ const Signup = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (credentials.password !== credentials.cpassword) {
-      props.showAlert('Password and Confirm Password doesnot match', 'danger')
+      props.showAlert("Password and Confirm Password doesnot match", "danger");
     } else {
       const response = await fetch(
-        // `http://localhost:1000/api/auth/createUser`
-        `https://inotebook-backend-pbw7.onrender.com/api/auth/createUser`
-        ,
+        `${process.env.REACT_APP_API_URL}/api/auth/create-user`,
         {
           method: "POST",
           headers: {
@@ -45,9 +43,9 @@ const Signup = (props) => {
       if (json.success) {
         localStorage.setItem("token", json.authToken);
         navigate("/");
-        props.showAlert('Account created Successfully', 'success')
+        props.showAlert("Account created Successfully", "success");
       } else {
-        props.showAlert(json.error, 'danger')
+        props.showAlert(json.error, "danger");
       }
     }
   };
@@ -116,12 +114,17 @@ const Signup = (props) => {
             onChange={onChange}
           />
         </div>
-        {/* <button type="submit" className="btn btn-primary">
-          Submit
-        </button> */}
-        <div className='buttonContainer' >
-        <button type="submit" className="btn btn-success login my-2" >Sign In</button>
-        <Link to='/login' role='button' className= "btn btn-primary signup my-2">Log In</Link>
+        <div className="buttonContainer">
+          <button type="submit" className="btn btn-success login my-2">
+            Sign In
+          </button>
+          <Link
+            to="/login"
+            role="button"
+            className="btn btn-primary signup my-2"
+          >
+            Log In
+          </Link>
         </div>
       </form>
     </div>

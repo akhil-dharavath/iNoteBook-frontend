@@ -33,28 +33,28 @@ i {
   width: 180px;
   margin-left: 25px;
 }
-.logSign h1{
-    text-align: center;
+.logSign h1 {
+  text-align: center;
 }
-.logSign label{
-    font-size: 20px;
-    margin-bottom: -10px!important;
+.logSign label {
+  font-size: 20px;
+  margin-bottom: -10px !important;
 }
-@media (max-width:550px) {
-    .buttonContainer{
-        display: flex;
-        flex-direction: column;
-    }
-    .logSign{
-        width: 100%;
-        padding: 10px;
-    }
-    .login{
-        width: 80%;
-        margin: auto;
-    }
-    .signup{
-        width: 80%;
-        margin: auto;
-    }
+@media (max-width: 550px) {
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .logSign {
+    width: 100%;
+    padding: 10px;
+  }
+  .login {
+    width: 80%;
+    margin: auto;
+  }
+  .signup {
+    width: 80%;
+    margin: auto;
+  }
 }
