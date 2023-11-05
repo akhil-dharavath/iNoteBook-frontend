@@ -1,5 +1,6 @@
 ### If you cannot login or signup that is because of time out in mongoDB Atlas for that the backend server to be restarted.
-- live at : https://inotebook-akhil-dharavath.netlify.app 
+- live at : https://inotebook-akhil-dharavath.netlify.app
+- Back-end : https://github.com/akhildgithub/iNotebook-backend
 
 ## Used Technologies
 - React.js ( Front-end )
